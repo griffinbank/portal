@@ -1,6 +1,9 @@
 (ns ^:no-doc portal.ui.sci.libs
-  (:require ["react" :as react]
+  (:require ["dagre" :as dagre]
+            ["html-to-image" :as html-to-image]
+            ["react" :as react]
             ["react-dom" :as react-dom]
+            ["reactflow" :as reactflow]
             ["vega" :as vega]
             ["vega-embed" :as vega-embed]
             ["vega-lite" :as vega-lite]
@@ -30,6 +33,7 @@
             portal.ui.viewer.json
             portal.ui.viewer.log
             portal.ui.viewer.markdown
+            portal.ui.viewer.proc-par
             portal.ui.viewer.relative-time
             portal.ui.viewer.table
             portal.ui.viewer.text
@@ -55,7 +59,10 @@
     "react-dom"  (import-npm react-dom)
     "vega"       (import-npm vega)
     "vega-embed" (import-npm vega-embed)
-    "vega-lite"  (import-npm vega-lite)}
+    "vega-lite"  (import-npm vega-lite)
+    "reactflow"  (import-npm reactflow)
+    "dagre"      (import-npm dagre)
+    "html-to-image" (import-npm html-to-image)}
    (sci-import/import-ns
     portal.colors
     portal.ui.api

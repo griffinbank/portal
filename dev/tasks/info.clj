@@ -23,10 +23,10 @@
      (provided (get-in deps [:aliases :plk :extra-deps])))))
 
 (def options
-  {:lib           'djblue/portal
+  {:lib           'griffin/portal
    :description   "A clojure tool to navigate through your data."
    :version       version
-   :url           "https://github.com/djblue/portal"
+   :url           "https://github.com/griffinbank/portal"
    :src-dirs      ["src"]
    :resource-dirs ["resources"]
    :jar-file      (str "./target/portal-" version ".jar")
